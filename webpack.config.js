@@ -11,11 +11,13 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   mode: "development",
   devServer: {
     static: "dist",
     open: true,
+    hot: true,
   },
   module: {
     rules: [
